@@ -13,7 +13,7 @@ body {
     height: 300px;
     margin: 15% auto;
     padding: 20px;
-    background-color: #fff;
+    background-color: #0a9aadd8;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding-top: 10px;
@@ -30,15 +30,17 @@ h3 {
 .answer-container {
     width: 100%;
     text-align: center;
-    }
+}
 
 input {
     text-align: center;
     width: 30%;
     margin: 10px auto;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: none;
+    background-color: #ffffff;
     border-radius: 5px;
+    outline-style: none;
 }
 
 button {
@@ -110,6 +112,6 @@ button:hover {
     transition: background-color 0.3s, color 0.3s;
 }
 
-.userInput{
+/* .userInput{
     border: 2px solid red;
-}
+} */
