@@ -37,7 +37,6 @@ input {
     width: 30%;
     margin: 10px auto;
     padding: 10px;
-    border: none;
     background-color: #ffffff;
     border-radius: 5px;
     outline-style: none;
@@ -112,6 +111,6 @@ button:hover {
     transition: background-color 0.3s, color 0.3s;
 }
 
-/* .userInput{
+.userInput{
     border: 2px solid red;
-} */
+}

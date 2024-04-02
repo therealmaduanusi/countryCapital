@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="styles/style.css">
     <title>Document</title>
 </head>
-<body>
+<body id="app">
     <form class="container" action="/submit" method="post">
         <div class="horizontal-container">
           <h3>
@@ -25,7 +25,7 @@
           <input type="text" name="answer" id="userInput" placeholder="Enter the capital" autofocus autocomplete="off">
     
         </div>
-        <button type="submit">SUBMIT<% if(locals.wasCorrect){ %>
+        <button type="submit" id="submit">SUBMIT<% if(locals.wasCorrect){ %>
             <span class="checkmark">✔</span>
             <% } else if (locals.wasCorrect===false) { %>
               <span class="cross" id="error">✖</span>
@@ -37,19 +37,24 @@
     <script>
         var wasCorrect = "<%= locals.wasCorrect %>";
         console.log(wasCorrect)
-        
         if (wasCorrect === "false") {
           alert('Game over! Final best score: <%= locals.totalScore %>');
           document.getElementById("app").innerHTML = '<a href="/" class="restart-button">Restart</a>'
         }
-        // let userInput = document.getElementById("userInput");
-        // if(userInput.value === ''){
-        //     userInput.classList.add("userInput")
-        //     // userInput.insertAdjacentText("afterbegin", "add text")
-        // }else if (wasCorrect === "false") {
-        // //   document.getElementById("app").innerHTML = '<a href="/" class="restart-button">Restart</a>'
-        // }
-    
+        let userInput = document.getElementById("userInput");
+        let submitBtn = document.getElementById('submit');
+        submitBtn.addEventListener('click', (e) => {
+            if(userInput.value === ''){
+                e.preventDefault()
+                console.log('hello');
+                userInput.classList.add("userInput")
+                let changeInputPlaceholder = userInput.placeholder = `input can't be empty`
+                console.log();
+            }
+        })
+        
+            
+        
     </script>
 
 </body>
