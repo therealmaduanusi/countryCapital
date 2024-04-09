@@ -1,7 +1,7 @@
-### index file coming soon...
+### index file here...
 
 > [!IMPORTANT]
-> Working on my DB credential so Hang in there 😉.
+> The index file is now avaliable 😉.
 
 > [!NOTE]
-> Am still learning the round about of DBMS, So my PW is valuable to me 😑.
+> Documentation coming soon...😑.
