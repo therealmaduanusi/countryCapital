@@ -98,6 +98,12 @@ button:hover {
 }
 }
 
+/* restart button */
+.restart-wrapper{
+    display: grid;
+    place-content: center;
+    margin-top: 300px;
+}
 .restart-button {
     display: inline-block;
     background-color: #fff;
@@ -110,6 +116,7 @@ button:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s, color 0.3s;
 }
+
 
 .userInput{
     border: 2px solid red;

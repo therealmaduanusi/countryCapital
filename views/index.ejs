@@ -39,18 +39,17 @@
         console.log(wasCorrect)
         if (wasCorrect === "false") {
           alert('Game over! Final best score: <%= locals.totalScore %>');
-          document.getElementById("app").innerHTML = '<a href="/" class="restart-button">Restart</a>'
+          document.getElementById("app").innerHTML = '<div class="restart-wrapper"><a href="/" class="restart-button">Restart</a></div>'
         }
         let userInput = document.getElementById("userInput");
         let submitBtn = document.getElementById('submit');
         submitBtn.addEventListener('click', (e) => {
-            if(userInput.value === ''){
-                e.preventDefault()
-                console.log('hello');
-                userInput.classList.add("userInput")
-                let changeInputPlaceholder = userInput.placeholder = `input can't be empty`
-                console.log();
-            }
+          if(userInput.value === ''){
+            e.preventDefault()
+            console.log('hello');
+            userInput.classList.add("userInput")
+            let changeInputPlaceholder = userInput.placeholder = `input can't be empty`
+          }
         })
         
             

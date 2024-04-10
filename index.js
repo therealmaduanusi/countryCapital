@@ -35,9 +35,9 @@ app.use(express.static("public"));
 let currentQuestion = {};
 // GET home page
 app.get('/', async(req, res) => {
-    totalCorrect = 0;
-    await nextQuestion();
-    res.render("index.ejs", { question: currentQuestion });
+  totalCorrect = 0;
+  await nextQuestion();
+  res.render("index.ejs", { question: currentQuestion });
 });
 // POST a new post
 app.post("/submit", (req, res) => {
@@ -58,10 +58,10 @@ app.post("/submit", (req, res) => {
 });
 
 async function nextQuestion() {
-    const randomCountry = quiz[Math.floor(Math.random() * quiz.length)];
-    currentQuestion = randomCountry;
+  const randomCountry = quiz[Math.floor(Math.random() * quiz.length)];
+  currentQuestion = randomCountry;
 }
 
 app.listen(port, () => {
-    console.log(`Listening at port ${port}`)
+  console.log(`Listening at port ${port}`)
 })
