@@ -1,6 +1,6 @@
-# Guess the country CAPITAL
+# Guess the country "CAPITAL"
 
-**pratice your geographical lesson by playing a little game**
+**pratice your geographical lesson by playing a little game.**
 This repository contains a simple Express.js application designed to quiz users on world capitals. Users interact with the application through a web interface where they are presented with random countries and prompted to input the corresponding capital.
 
 ## Prerequisites
@@ -51,6 +51,10 @@ Once the application is running, access it through your web browser at http://lo
 - **Scoring**: Users receive immediate feedback on whether their answers are correct, and their total score is displayed.
 - **Database Interaction**: The application interacts with a PostgreSQL database to retrieve a list of countries and capitals.
 
+## Contributing
+Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request.
+
+#### Code Snippets
 ```html
 <button type="submit" id="submit">SUBMIT<% if(locals.wasCorrect){ %>
     <span class="checkmark">✔</span>
@@ -68,4 +72,4 @@ res.render("index.ejs", { question: currentQuestion });
 > The index file is now avaliable 😉.
 
 > [!NOTE]
-> Documentation coming soon...😑.
+> Am still learning so please...😑.
